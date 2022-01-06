@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 
 import './index.css';
 
+import './script.js';
+
 import App from './App';
 
 

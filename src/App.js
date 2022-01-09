@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Welcome from './welcome.jsx';
-import Attractions from './attractions.jsx';
-import Tours from './tours.jsx';
-import Contacts from './contacts.jsx';
-import Footer from './footer.jsx';
+import Welcome from './conponents/welcome.jsx';
+import Attractions from './conponents/attractions.jsx';
+import Tours from './conponents/tours.jsx';
+import Contacts from './conponents/contacts.jsx';
+import Footer from './conponents/footer.jsx';
 
 function App() {
   return (

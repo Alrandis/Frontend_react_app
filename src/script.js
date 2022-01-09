@@ -101,5 +101,5 @@ function handleToggleItemsButtonClick(listItemsContainer, pointerEvent) {
         pointerEvent.currentTarget.innerText = 'Больше туров'
         listItemsContainer.classList.remove(classForVisibleHiddenItems)
     }
-  }
+}
 

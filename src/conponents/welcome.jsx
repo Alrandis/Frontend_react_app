@@ -1,6 +1,11 @@
 import React from 'react';
 
 function Welcome() {
+    document.querySelector('.menu')?.classList.toggle('_active')
+	document.querySelector('.header__button')?.classList.toggle('_active')
+	document.querySelector('.welcome__arrow')?.classList.toggle('_active')
+	document.body.classList.toggle('_lock')
+	
     return (
         <article id="title_list0" className="welcome">
         <header className="header">

@@ -6,15 +6,12 @@ let menuLinks;
 let buttonToggleItems;
 let listItemsContainer;
 
-
 function init() {
     buttonMenu = document.querySelector('.header__button');
     menuBody = document.querySelector('.menu');
     if (buttonMenu) {
         buttonMenu.addEventListener("click", onMenuClick)
     }
-
-    window.addEventListener('scroll', handleWindowScroll);
 
     title_list1 = document.querySelector('.sightseens');
     arrow = document.querySelector('.welcome__arrow');
@@ -33,12 +30,6 @@ function init() {
     }
     
     listItemsContainer = document.getElementsByClassName('tours')
-    
-    buttonToggleItems[0].addEventListener(
-      'click',
-      (event) =>
-        handleToggleItemsButtonClick(listItemsContainer[0], event)
-    )
 
 }
 
@@ -91,15 +82,3 @@ function handleWindowScroll() {
         header.classList.remove('_active');
     }
 }
-function handleToggleItemsButtonClick(listItemsContainer, pointerEvent) {
-    const classForVisibleHiddenItems = 'tour--hidden-visible';
-    
-    if(pointerEvent.currentTarget.innerText === 'Больше туров') {
-      pointerEvent.currentTarget.innerText = 'Меньше туров'
-      listItemsContainer.classList.add(classForVisibleHiddenItems)
-    } else {
-        pointerEvent.currentTarget.innerText = 'Больше туров'
-        listItemsContainer.classList.remove(classForVisibleHiddenItems)
-    }
-}
-

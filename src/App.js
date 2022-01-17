@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Welcome from './conponents/welcome.jsx';
+import Welcome from './conponents/welcome copy.jsx';
 import Attractions from './conponents/attractions.jsx';
 import Tours from './conponents/tours.jsx';
 import Contacts from './conponents/contacts.jsx';
